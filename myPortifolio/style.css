@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(Lewisbackground.jpg);
+    background-image: url(bread-pic1.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: peachpuff;
@@ -10,8 +10,8 @@ body {
   
   .logo {
 
-    width: 60%;
-    height: 80%;
+    width: 30%;
+    height: 40%;
     margin: 3% 10%;
   }
   
@@ -93,4 +93,83 @@ body {
     color: white;
     letter-spacing: 16px;
     font-style: italic;
+  }
+
+  @media (min-width : 320px) {
+      
+      #profile-pic {
+      
+      width: 100px;
+      height: 100px;
+      }
+    
+      h1 {
+      color: lime
+      }
+
+      nav > a {
+      color: lime;
+      }
+
+      .logo {
+      display: none;
+      }
+
+      }
+
+  @media (min-width: 576px) {
+
+    .logo {
+      display: block;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+
+    #profile-pic {
+      
+      width: 200px;
+      height: 200px;
+    }
+
+    h1 {
+      color: navy
+    }
+
+    nav > a {
+      color: navy;
+    }
+
+  }
+
+  @media (min-width: 992px) {
+    
+    #profile-pic {
+      
+      width: 300px;
+      height: 300px;
+    }
+
+    h1 {
+      color: crimson
+    }
+
+    nav > a {
+      color: crimson;
+    }
+
+    
+    .logo {
+
+        width: 60%;
+        height: 80%;
+        margin: 3% 10%;
+    }
+    
+
+  }
+
+  @media (min-width: 1200px) {
+
   }

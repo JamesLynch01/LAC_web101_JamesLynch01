@@ -18,7 +18,7 @@ p:hover {
 }
 
 p {
-    font-size: 2.5rem;
+    font-size: x-large;
 }
 
 .column {
@@ -32,8 +32,24 @@ p {
     clear: both;
 }
 
-@media (min-width: 600px;) {
-p { font-size: 1.5;
+@media (min-width : 320px) {
+    .column {
+        width: 40%
+    }
+}
+
+@media (min-width: 576px) {
 
 }
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }
