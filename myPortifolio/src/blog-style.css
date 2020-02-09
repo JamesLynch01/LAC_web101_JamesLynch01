@@ -19,23 +19,40 @@ p:hover {
 
 p {
     font-size: x-large;
+    text-indent: 10%;
+    grid-area: p;
+    background-color: navy;
 }
 
-.column {
-    float: left;
-    width: 50%
+h1 {
+    grid-area: h1;
+    background-color: blue;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+h2 {
+    grid-area: h2;
+    background-color: #4457A4;
+}
+
+div {
+    grid-area: div;
+    background-color: #02071C;
+    color: yellow;
+}
+
+body {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "h1 h1"
+        "h2 h2"
+        "p p"
+        "div div"
 }
 
 @media (min-width : 320px) {
-    .column {
-        width: 40%
-    }
+    
 }
 
 @media (min-width: 576px) {
@@ -47,9 +64,25 @@ p {
 }
 
 @media (min-width: 992px) {
-
+    .body {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas:
+        "h1 h1"
+        "h2 h2"
+        "p p"
+        "div div";
+    }
 }
 
 @media (min-width: 1200px) {
-
+    .body {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas:
+            "h1 h1"
+            "h2 h2"
+            "p p"
+            "div div";
+    }
 }

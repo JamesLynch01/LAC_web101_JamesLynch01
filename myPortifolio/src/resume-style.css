@@ -6,15 +6,46 @@ p {
     font-size: 2rem;
 }
 
-
-
-.column {
-    float: left;
-    width: 50%
+h1 {
+    grid-area: h1;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+div {
+    grid-area: div
+}
+
+@media (min-width : 320px) {
+    container {
+        display: grid; 
+        grid-template-areas:
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+    container {
+    display: grid;
+    grid-template-areas:
+    
+    "h1 h1 h1"
+    "div div div"
+    "div div div"}
+
+}
+
+@media (min-width: 1200px) {
+    container {
+        display: grid;
+        grid-template-areas:
+        
+        "h1 h1 h1"
+        "div div div"
+        "div div div"}
+
 }
