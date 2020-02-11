@@ -1,0 +1,35 @@
+section {
+    background-image:none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "mainbody mainbody mainbody mainbody"
+        "weatherwidget-io calculator clock checklist"
+}
+
+.mainbody {
+    grid-area: mainbody;
+}
+
+.weatherwidget-io {
+    grid-area: weatherwidget-io;
+}
+
+.calculator {
+    grid-area: calculator;
+    
+}
+
+.clock {
+    grid-area: clock
+}
+
+.checklist {
+    grid-area: checklist;
+}
+
+.backgroundimage {
+    background-image: url(black-cat-200x200.jpg);
+    background-size: 100%;
+}
