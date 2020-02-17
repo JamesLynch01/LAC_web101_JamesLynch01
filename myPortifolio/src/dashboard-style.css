@@ -49,3 +49,63 @@ section {
 .button {
     grid-area: button;
 }
+
+h1 {
+    box-sizing: border-box;
+}
+
+@media (min-width : 320px) {
+    
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "mainbody"
+            "weatherwidget-io"
+            "calculator"
+            "clock"
+            "checklist"
+    }
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "mainbody mainbody mainbody"
+            "weatherwidget-io weatherwidget-io weather-io"
+            "calculator clock checklist"
+    }
+
+}
+
+@media (min-width: 992px) {
+    section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "mainbody mainbody mainbody mainbody"
+        "weatherwidget-io calculator clock checklist";
+    grid-column-gap: 3%;
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "mainbody mainbody mainbody mainbody"
+        "weatherwidget-io calculator clock checklist";
+    grid-column-gap: 3%;
+    }
+}

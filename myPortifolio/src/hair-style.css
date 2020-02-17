@@ -1,0 +1,74 @@
+img {
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    margin-left: 5%;
+}
+
+main {
+    background-image: url(./image/barbarpic.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    float: left;
+    margin-left: 20%;
+}
+
+h1 {
+    margin-left: 50%;
+    
+}
+
+h2 {
+    font-size: large;
+}
+
+@media (min-width : 320px) {
+   body {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+       grid-template-rows: 1fr;
+       grid-template-areas: 
+        "header"
+        "header"
+        "main"
+        "main"
+        "footer"
+        "footer";
+   }
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "header header header"
+            "main main main"
+            "footer footer footer";
+    }    
+}
+
+@media (min-width: 1200px) {
+   
+}
