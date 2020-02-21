@@ -28,6 +28,9 @@ section {
 
 .checklist {
     grid-area: checklist;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .backgroundimage {
@@ -44,6 +47,14 @@ section {
         "button button button button button"
         "button button button button button"
         "button button button button button"
+
+    /*
+     display: flex;
+     flex-direction: column;
+     flex-wrap: none;
+     justify-content: none;
+     align-items: stretch;
+     align-content: center;*/
 }
 
 .button {
