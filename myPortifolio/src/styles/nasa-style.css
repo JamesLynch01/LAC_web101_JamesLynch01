@@ -30,16 +30,13 @@ article {
     width: 270px;
     height: 324px;
     background-color: #e6e6e6;
+    justify-content: center;
 }
 
 .Social {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.media {
-    text-size-adjust: 20px;
 }
 
 .office {
