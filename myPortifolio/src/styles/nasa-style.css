@@ -1,4 +1,55 @@
 body {
-   
-    display: 
+    margin: 0 auto;
+    width: 850px;
+    height: 800px;
+}
+
+main {
+    height: 450px;
+    margin: 0 auto;
+    background-image: url(../Image/black-hole.jpg);
+    color: white;
+}
+
+h1 {
+    float: none;
+    padding-top: 25%;
+    padding-left: 35%;
+    font-size: 100px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    background-color: #e6e6e6;
+    justify-content: space-between;
+    
+}
+
+article {
+    width: 270px;
+    height: 324px;
+    background-color: #e6e6e6;
+}
+
+.Social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.media {
+    text-size-adjust: 20px;
+}
+
+.office {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
