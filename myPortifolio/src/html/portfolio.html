@@ -3,13 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/portfolio-style.css">
     <title>Document</title>
 </head>
 <body>
-    <p>
-        <a style="color: blue;" href="./dashboard.html">Widgets</a>
-        <a style="color:black;"href="./hair.html">Hair</style>
-        <a style="color: crimson;" href="nasa.html">Nasa</a>
-    </p>
+    <header class="banner">
+        <p>This is my banner, this is my song!</p>
+    </header>
+    <main>
+        <section>
+            <div class="cartoon">
+                <a style="color: blue;" href="./dashboard.html">
+                    <img src="../Image/GO-GO-Gadget-200x200.jpg"
+                    alt="go-go-gagdet"/>
+                </a>
+                <a style="color:black;"href="./hair.html">
+                    <img src="../Image/johnny bravo-200x200.jpg"
+                        alt="hair cut link">
+                </a>
+                <a style="color: crimson;" href="nasa.html">
+                    <img src="../Image/black-hole-200x200.jpg"
+                        alt="NASA Link">
+                </a>
+            </div>
+        </section>
+        <div class="tacky">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y84OYRwzZU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="coke">
+            <form action="none">
+                <div class="Yourname">
+                    <p>Name<input type="text" name="name" id="name"></p>
+                </div>    
+                <div class="mail">
+                    <p>email<input type="email" name="email" id="email"></p>
+                </div>
+                <div class="location">
+                    <p>location<input type="text" name="location" id="location"></p>
+                </div>
+                <div class="messages">
+                    <p>message<input type="textarea" name="message" id="message"></p>
+                </div>
+                <div class="setting">
+                    <p>reset<input type="reset" value="reset"></p>
+                </div>
+                <div class="subbing">
+                    <p>submit<input type="button" value="submit"></p>
+                </div>
+                
+            </form>
+        </div>
+    </main>
 </body>
 </html>

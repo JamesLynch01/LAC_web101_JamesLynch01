@@ -1,0 +1,125 @@
+body {
+    margin: 0 auto;
+    height: 400px;
+    width: 800px;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+main {
+    grid-area: main;
+}
+
+.cartoon {
+    background-color: none;
+    grid-area: cartoon;
+
+}
+
+.tacky {
+    background-color: none;
+    grid-area: tacky;
+}
+
+.coke {
+    background-color: #e6e6e6;
+    grid-area: coke;
+}
+
+.Yourname {
+    display: grid;
+}
+
+.mail {
+    display: grid;
+}
+
+.location {
+    display: grid;
+}
+
+.messages {
+    display: grid;
+}
+
+.setting {
+    display: grid;
+}
+
+.subbing {
+    display: grid;
+}
+
+@media (min-width : 320px) {
+    body {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "banner"
+        "main";
+    }
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "banner banner"
+        "main main";
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "banner banner banner"
+        "main main main"
+        "main main main";
+    }
+
+    .coke {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "Yourname mail"
+        "location messages"
+        "setting subbing";
+    }
+}
+
+  
+
+@media (min-width: 1200px) {
+    body {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "banner banner banner"
+        "main main main"
+        "main main main";
+    }
+
+    .coke {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "name email"
+        "location message"
+        "reset submit";
+    }
+}
