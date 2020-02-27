@@ -1,5 +1,5 @@
 body {
-    background-color: navy;
+    background-color: #e6e6e6;
 }
 
 .parent {
@@ -13,9 +13,9 @@ body {
 
 .bob {
     color: #FF6347;
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr
+    grid-template-rows: 1fr 1fr*/
 }
 
 .larry {
@@ -37,7 +37,7 @@ img {
 }
 
 p {
-    color: yellow;
+    color: black;
     border: 4px;
 }
 
