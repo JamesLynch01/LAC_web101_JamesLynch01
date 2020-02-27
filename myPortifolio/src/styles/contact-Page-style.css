@@ -1,0 +1,55 @@
+body {
+    background-color: #6e6e6e;
+}
+
+.larry {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: none;
+}
+
+.quoteSmartypants {
+    grid-area: quoteSmartypants;
+}
+
+.textFakeLatin {
+    grid-area: textFakeLatin;
+    color: none;
+    column-count: 3;
+    column-gap: 3%;
+    column-span: all;
+
+}
+
+.latinCode {
+    color: crimson;
+}
+
+.beholder {
+    color: brown;
+}
+
+.myRealAddress {
+    grid-area: myRealAddress;
+    color: none;
+}
+
+@media (min-width : 320px) {
+
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
