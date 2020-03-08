@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Viaoda Libre', cursive;
+    text-align: left;
+    text-indent: 7%;
+}
+
+.blueBacon {
+    background-color: #33a8dd;
+}
+
+.orangeBacon {
+    background-color: #f46731;
+}
+
+.greenBacon {
+    background-color:  #2bcdc0;
+}
+
+p {
+    color: white;
+}
+
+@media (min-width : 320px) {
+    body {
+        font-family:'Oswald', sans-serif;
+    }
+
+    p {
+        column-count: 2;
+    }
+    
+}
+
+@media (min-width : 992px) {
+    body {
+        font-family: 'Viaoda Libre', cursive;
+    }
+   
+}

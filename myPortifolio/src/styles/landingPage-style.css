@@ -1,0 +1,81 @@
+body {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "header header"
+        "main main";
+    background-color: black;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+header {
+    color: white;
+    background-color: #2bcdc0;
+    grid-area: header;
+    height: 300px;
+    text-align: center;
+    
+   
+}
+
+h1 {
+    padding-left: none;
+    padding-top: 70px;
+}
+
+main {
+    column-count: 3;
+    column-gap: none;
+    column-span: none;
+    margin-top: 30px;
+    grid-area: main;
+    height: 300px;
+}
+
+.bacon1 {
+    background: linear-gradient(110deg, #33a8dd 60%, black 60%);
+    color: white;
+    grid-area: bacon1;
+}
+
+.bacon2 {
+    background: linear-gradient(110deg,#f46731 60%, black 60%);
+    color: white;
+    grid-area: bacon2;
+}
+
+.bacon3 {
+    background: linear-gradient(110deg, #2bcdc0 60%, black 60% );
+    color: white;
+    grid-area: bacon3;
+}
+
+@media (min-width : 320px) {
+    body {
+        font-family: 'Oswald', sans-serif;
+        
+    }
+    header {
+        background-color: #33a8dd;
+    }
+
+    main {
+        column-count: 1;
+
+    }
+}
+
+@media (min-width : 992px) {
+    body {
+        font-family: 'Viaoda Libre', cursive;
+    }
+    header {
+        background-color: #2bcdc0;
+    }
+
+    main {
+        column-count: 3;
+    }
+}

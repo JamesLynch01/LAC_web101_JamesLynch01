@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    margin: 50px 100px 50px 100px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+header {
+    background-color: #2bcdc0;
+    height: 300px;
+    width: 1300px;
+}
+
+h1 {
+    color: white;
+    padding-top: 100px;
+    padding-left: 500px;
+}
+
+main {
+    
+}
+
+iframe {
+    padding-left: 400px;
+}
+
+
+@media (min-width : 320px) {
+    body {
+        font-family:'Oswald', sans-serif;
+    }
+    
+}
+
+@media (min-width : 992px) {
+    body {
+        font-family: 'Viaoda Libre', cursive;
+    }
+   
+}
