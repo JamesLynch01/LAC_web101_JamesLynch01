@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/ticTacToe-style.css">
-    <script src="../JS/ticTacToe.js"></script>
+    
     <title>Document</title>
 </head>
 <body>
-
-    <input type="button" onclick="changeMarkerToO()" value="O">
-    <input type="button" onclick="changeMarkerToX()" value="X">
-    
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <p data-winning-message-text>YOU ARE THE WINNER!</p>
+        <button id="restartButton">restart</button>
+    </div>
+    <script src="../JS/jquery-3.4.1.min.js"></script>
+    <script src="../JS/ticTacToe.js"></script>
 </body>
 </html>
