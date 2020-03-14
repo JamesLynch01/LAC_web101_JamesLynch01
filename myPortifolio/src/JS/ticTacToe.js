@@ -1,4 +1,4 @@
-const X_class = 'x'
+const X_CLASS = 'x'
 const CIRCLE_CLASS = 'circle'
 const WINNING_COMBINATIONS = [
     [0, 1, 2],
@@ -11,7 +11,7 @@ const WINNING_COMBINATIONS = [
     [2, 4, 6]
 ]
 
-const cellElements = document.querySelectorAll('data-cell')
+const cellElements = document.querySelectorAll('[data-cell]')
 const board = document.getElementById('board')
 const winningMessageElement = document.getElementById('winningMessage')
 const restartButton = document.getElementById('restartButton')
@@ -38,6 +38,7 @@ function handleClick(e) {
     const cell = e.target
     const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
     placeMark(cell, currentClass)
+    
     if (checkWin(currentClass)) {
         endGame(false)
     } else if (isDraw()) {
@@ -52,13 +53,14 @@ function endGame(draw) {
     if (draw) {
         winningMessageTextElement.innerText = 'Draw!'
     } else {
-        winningMessageTextElement.innerText = `${circleTurn ? "0's" : "X's"} Wins!`
+        winningMessageTextElement.innerText = `${circleTurn ? "O's" : "X's"} Wins!`
     }
     winningMessageElement.classList.add('show')
 }
 
 function isDraw() {
-    return [...cellElement].every(cell => {
+    arr = [...cellElements]
+    return arr.every(cell => {
         return cell.classList.contains(X_CLASS) || cell.classList.contains(CIRCLE_CLASS)
     })
 }
