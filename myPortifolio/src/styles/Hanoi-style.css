@@ -1,6 +1,5 @@
-data-row] {
+[data-row] {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     height: 34px;
     margin: 25px;
@@ -9,18 +8,22 @@ data-row] {
   
   [data-row].red {
     background-color: #f6c5c5;
+    grid-area: red;
   }
   
   [data-row].yellow {
     background-color: #ffffa9;
+    grid-area: yellow;
   }
   
   [data-row].green {
     background-color: #baf6ba;
+    grid-area: green;
   }
   
   [data-row].blue {
     background-color: aliceblue;
+    grid-area: blue;
   }
   
   [data-color] {
