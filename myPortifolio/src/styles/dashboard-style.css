@@ -1,12 +1,18 @@
+body {
+    background: linear-gradient(250deg, #e6e6e6 50%, #a48b00 50%);
+}
+
 section {
     background-image:none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
+        "mainbody mainbody mainbody mainbody"
         "mainbody mainbody mainbody mainbody"
         "weatherwidget-io calculator clock checklist";
     grid-column-gap: 3%;
+    grid-row-gap: 30%;
 }
 
 .mainbody {
@@ -34,8 +40,8 @@ section {
 }
 
 .backgroundimage {
-    background-image: url(../Image/bakingicon-150x150.jpg);
-    background-size: 100%;
+    /*background-image: url(none);
+    background-size: 100%;*/
 }
 
 .calculator-keys {
@@ -62,6 +68,53 @@ section {
 h1 {
     box-sizing: border-box;
 }
+
+.container {
+    margin: 2rem auto;
+    max-width: 50rem;
+    text-align: center;
+  }
+  
+  form {
+    margin: 2.5rem auto;
+  }
+  
+  .find-me.btn {
+    font-family: inherit;
+  }
+  
+  .find-me.btn,
+  .not-on-https,
+  .no-geolocation-support,
+  .coordinates {
+    font-size: 1.5em;
+  }
+  
+  .not-on-https,
+  .no-geolocation-support {
+    display: none;
+  }
+  
+  .coordinates {
+    display: none;
+    margin-bottom: 2.5rem;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  #map {
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  #map-canvas {
+    height: 25rem;
+    min-height: 25rem;
+    width: 100%;
+  }
+  
 
 @media (min-width : 320px) {
     
